@@ -1,0 +1,9 @@
+from itertools import permutations
+import string
+Name = input("Enter the name")
+p = permutations(Name)
+d = []
+for i in list(p):
+    if (i not in d):
+        d.append(i)
+        print(''.join(i))
